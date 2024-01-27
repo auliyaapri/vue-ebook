@@ -7,6 +7,7 @@
   import '@/assets/vendor/isotope-layout/isotope.pkgd.min.js'
   import '@/assets/vendor/swiper/swiper-bundle.min.js'
   import '@/assets/vendor/php-email-form/validate.js'
+import Footer from "./components/layouts/Footer.vue";
 
   const route = useRoute();
 </script>
@@ -17,6 +18,7 @@
     <Navbar v-if="route.path !== '/login' && route.path !== '/register'" />
 
     <RouterView />
+    <Footer />
   </div>
 </template>
 <style>

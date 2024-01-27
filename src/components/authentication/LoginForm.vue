@@ -29,7 +29,7 @@ async function login() {
 
     // Redirect ke halaman utama setelah login berhasil
     router.push("/");
-    console.log(response);
+    // console.log(response);
   } catch (error) {
     console.error(error);
   }

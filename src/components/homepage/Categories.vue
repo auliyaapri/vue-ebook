@@ -8,7 +8,7 @@ const categoriesEbook = ref([]);
 
 async function getCategoriesEbook() {
     try {
-        const response = await axios.get("http://192.168.100.5:8000/api/categories?limit=4");
+        const response = await axios.get("http://192.168.100.5:8000/api/categories?limit=9");
         categoriesEbook.value = response.data.data.data;
     } catch (error) {
         console.error(error);
@@ -30,7 +30,7 @@ onMounted(() => {
             <div class="section-title">
                 <h2>Top Categories</h2>
                 <p>
-                    Temukan kategori yang Anda minati kami yang memudahkan Anda dalam
+                    Temukan kategori yang Anda minati kami yang memudahkan Anda dalamdddddd
                     pengelolaan peminjaman buku.
                 </p>
             </div>

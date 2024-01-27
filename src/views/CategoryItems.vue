@@ -1,3 +1,9 @@
+<script setup>
+  import Items from '@/components/categories/Items.vue';
+</script>
+
 <template>
-    <h1>sddsd</h1>
+  <main>
+    <Items />
+  </main>
 </template>

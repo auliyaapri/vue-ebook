@@ -7,7 +7,9 @@ import Tabs from "@/components/homepage/Tabs.vue";
 import Services from "@/components/homepage/Services.vue";
 import Portfolio from "@/components/homepage/Portfolio.vue";
 import Pricing from "@/components/homepage/Pricing.vue";
+
 import Categories from "@/components/homepage/Categories.vue";
+
 
 
 </script>
