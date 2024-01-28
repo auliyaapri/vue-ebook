@@ -25,26 +25,18 @@ onMounted(() => {
     window.addEventListener("load", headerScrolled);
     window.addEventListener("scroll", headerScrolled);
   }
-  
+
   userStore.fetchUser();
 });
 </script>
 
 <template>
   <div>
-    <header
-      id="header"
-      class="fixed-top d-flex align-items-center"
-      :class="{ 'header-scrolled': isHeaderScrolled }"
-    >
+    <header id="header" class="fixed-top d-flex align-items-center" :class="{ 'header-scrolled': isHeaderScrolled }">
       <div class="container d-flex align-items-center">
         <h1 class="logo me-auto"><a href="index.html">Wiguna Book's<span>.</span></a></h1>
 
-        <nav
-          id="navbar"
-          class="navbar order-last order-lg-0"
-          :class="{ 'navbar-mobile': isNavbarMobile }"
-        >
+        <nav id="navbar" class="navbar order-last order-lg-0 " :class="{ 'navbar-mobile': isNavbarMobile }">
           <ul>
             <li><a class="nav-link scrollto active" href="/">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -52,12 +44,8 @@ onMounted(() => {
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
             <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           </ul>
-          <i
-            class="ms-3 bi bi-list mobile-nav-toggle bg-white"
-            @click="toggleMobileNavbar"
-          ></i>
-        </nav>
-
+          <i class="ms-3 bi bi-list mobile-nav-toggle bg-white" @click="toggleMobileNavbar"></i>        
+        </nav>        
         <UserInfo v-if="isLoggedIn" :user="user.data" />
         <AuthButton v-else />
       </div>

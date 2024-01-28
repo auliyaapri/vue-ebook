@@ -1,31 +1,149 @@
 <script setup>
-import { RouterLink } from "vue-router";
+import { ref } from "vue";
+import { RouterLink, useRouter } from "vue-router";
+import axios from "axios"; // Pastikan untuk mengimpor axios
+import { useUserStore } from "@/stores/user";
 
+const userStore = useUserStore();
+const router = useRouter();
 
+const form = ref({
+  name: "",
+  email: "",
+  password: "",
+  title: "Pekerja"
+});
+
+async function register() {
+  try {
+    const response = await axios.post(
+      "http://192.168.100.5:8000/api/register",
+      {
+        name: form.value.name,
+        email: form.value.email,
+        password: form.value.password,
+        title: form.value.title,
+      }
+    );
+    localStorage.setItem("access_token", response.data.data.access_token);
+    localStorage.setItem("token_type", response.data.data.token_type);
+
+    userStore.fetchUser();
+    router.push("/");
+    console.log(response);
+  } catch (error) {
+    console.error(error);
+  }
+}
 </script>
+<!-- 
+<template>
+  <form action="#" method="post">
+    <div class="form-group first">
+      <label for="name">Name</label>
+      <input
+        v-model="form.name"
+        type="text"
+        class="form-control"
+        placeholder="your name"
+        id="name"
+        name="name"
+      />
+    </div>
+    <div class="form-group first mt-3">
+      <label for="username">Email</label>
+      <input
+        model="form.email"
+        type="text"
+        class="form-control"
+        placeholder="your-email@gmail.com"
+        id="email"
+      />
+    </div>
+    <div class="form-group last mt-3 mb-3">
+      <label for="password">Password</label>
+      <input
+        model="form.password"
+        type="password"
+        class="form-control"
+        placeholder="Your Password"
+        id="password"
+      />
+    </div>
+
+    <div>
+      <button
+        @click="register"
+        type="button"
+        class="btn btn-block btn-primary w-100"
+      >
+        Continue Sign Up
+      </button>
+    </div>
+    <br />
+
+    <RouterLink to="/login">
+      <button class="btn btn-block btn-danger text-white w-100">
+        <RouterLink to="/login" class="text-white text-decoration-none"
+          >Sign In</RouterLink
+        >
+      </button>
+    </RouterLink>
+  </form>
+</template> -->
+
 <template>
     <form action="#" method="post">
-        <div class="form-group first">
-            <label for="username">Name</label>
-            <input type="text" class="form-control" placeholder="your name" id="username">
-        </div>
-        <div class="form-group first mt-3">
-            <label for="username">Email</label>
-            <input type="text" class="form-control" placeholder="your-email@gmail.com" id="email">
-        </div>
-        <div class="form-group last mt-3 mb-3">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" placeholder="Your Password" id="password">
-        </div>
-
-
-        <input type="submit" value="Continue Sign Up" class="btn btn-block btn-primary w-100">
-        <br>
-
-        <RouterLink to="/login">
-        <button class="btn btn-block btn-danger text-white mt-4 w-100">
-            <RouterLink to="/login" class="text-white text-decoration-none">Sign In</RouterLink>
+      <div class="form-group first">
+        <label for="name">Name</label>
+        <input
+          v-model="form.name"
+          type="text"
+          class="form-control"
+          placeholder="your name"
+          id="name"
+          name="name"
+        />
+      </div>
+      <div class="form-group first mt-3">
+        <label for="username">Email</label>
+        <input
+          v-model="form.email"
+          type="text"
+          class="form-control"
+          placeholder="your-email@gmail.com"
+          id="email"
+        />
+      </div>
+      <div class="form-group last mt-3 mb-3">
+        <label for="password">Password</label>
+        <input
+          v-model="form.password"
+          type="password"
+          class="form-control"
+          placeholder="Your Password"
+          id="password"
+        />
+      </div>
+  
+      <div>
+        <button
+          @click="register"
+          type="button"
+          class="btn btn-block btn-primary w-100"
+        >
+          Continue Sign Up
         </button>
-    </RouterLink>
+      </div>
+      <br />
+  
+      <RouterLink to="/login">
+        <button class="btn btn-block btn-danger text-white w-100">
+          <RouterLink to="/login" class="text-white text-decoration-none"
+            >Sign In</RouterLink
+          >
+        </button>
+      </RouterLink>
     </form>
-</template>
+  </template>
+  

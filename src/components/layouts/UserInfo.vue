@@ -2,8 +2,12 @@
     const props = defineProps({
         user: Object
     })    
+    const avatarUrl = "https://ui-avatars.com/api/?background=random&name=";
 </script>
 
 <template>
-    <div class="nav-link scrollto ms-3">Halo, {{ user.name }} </div>
+    <RouterLink to="/login" class="user_info scrollto">
+        <img :src="avatarUrl + user.name" alt="User Avatar" class="avatar_image" />
+        Halo, {{ user.name }} 
+    </RouterLink>        
 </template>

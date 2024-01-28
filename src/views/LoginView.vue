@@ -1,8 +1,16 @@
 <script setup>
 import LoginForm from '@/components/authentication/LoginForm.vue'
 import '@/assets/css/login-register.css';
+import { onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+onMounted(() => {
+  document.title = router.currentRoute.value.meta.title || 'Login';
+});
 </script>
+
 
 <template>
   

@@ -9,8 +9,14 @@ import Portfolio from "@/components/homepage/Portfolio.vue";
 import Pricing from "@/components/homepage/Pricing.vue";
 
 import Categories from "@/components/homepage/Categories.vue";
+import { useRouter } from "vue-router";
+import { onMounted } from "vue";
 
+const router = useRouter();
 
+onMounted(() => {
+  document.title = router.currentRoute.value.meta.title || 'Home';
+});
 
 </script>
 

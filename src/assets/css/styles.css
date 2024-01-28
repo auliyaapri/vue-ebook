@@ -156,6 +156,25 @@ h6 {
   font-weight: 600;
   display: inline-block;
 }
+.user_info {
+  margin-left: 30px;
+  background: rgba(201, 197, 197, 0.614);
+  color: #000;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.user_info .avatar_image {
+  background: red;
+  height:10px;
+
+
+}
 .get-signUp-btn {
   margin-left: 20px;
   background: navy;
