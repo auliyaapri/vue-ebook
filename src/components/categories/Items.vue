@@ -15,7 +15,7 @@
 
             <div class="row">
                 <center>
-                    <div class="d-flex justify-content-between w-75">
+                    <div class="d-flex categories_id justify-content-between w-75">
                         <ItemCard v-for="item in items" :key="item.id" :id="item.id" :title="item.name"
                             :description="item.subtitle" :image="item.thumbnails" />
                     </div>

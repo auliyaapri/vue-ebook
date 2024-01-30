@@ -15,7 +15,7 @@ import { onMounted } from "vue";
 const router = useRouter();
 
 onMounted(() => {
-  document.title = router.currentRoute.value.meta.title || 'Home';
+  document.title = router.currentRoute.value.meta.title || 'Beranda';
 });
 
 </script>

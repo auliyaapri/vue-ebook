@@ -18,7 +18,7 @@ import Footer from "./components/layouts/Footer.vue";
     <Navbar v-if="route.path !== '/login' && route.path !== '/register'" />
 
     <RouterView />
-    <Footer />
+    <Footer v-if="route.path !== '/login' && route.path !== '/register'" />
   </div>
 </template>
 <style>

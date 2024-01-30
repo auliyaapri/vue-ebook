@@ -8,6 +8,6 @@
 <template>
     <RouterLink to="/login" class="user_info scrollto">
         <img :src="avatarUrl + user.name" alt="User Avatar" class="avatar_image" />
-        Halo, {{ user.name }} 
+        Halo, {{ user.name }}         
     </RouterLink>        
 </template>

@@ -1,7 +1,7 @@
 <script setup>
 import axios from "axios";
 import { computed, onMounted, ref } from "vue";
-import { useRoute } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 import { useUserStore } from "@/stores/user";
 
 
@@ -14,22 +14,25 @@ const category = ref({});
 
 async function getItemsData() {
     try {
-        const response = await axios.get(`http://192.168.100.5:8000/api/products?id=${route.params.id}`);        
+        const response = await axios.get(
+      "http://192.168.100.5:8000/api/products?id=" +
+        route.params.id
+    );
         item.value = response.data.data;
         category.value = response.data.data.category;
 
-        console.log(response);
+        // console.log(response);
     } catch (error) {
         console.error(error);
     }
 }
 
-const features = computed(() => {
-    return item.value.features.split(",");
-});
+
 
 onMounted(() => {
+    
     getItemsData();
+    console.log(user.value);
 });
 </script>
 
@@ -53,8 +56,11 @@ onMounted(() => {
                     <h4>About:</h4>
                     <p>{{ item.description }}</p>
                     
-                    <button class="btn btn-primary">Subscribe</button>
+                    <RouterLink to="/pricing" class="btn btn-primary">
+                        Subscribe
+                    </RouterLink>                    
                 
+                    <!-- <a v-if="user" href=""></a> -->
                 </div>
             </div>
         </div>

@@ -31,7 +31,7 @@ onMounted(() => {
                 <h2>Top Categories</h2>
                 <p>
                     Temukan kategori yang Anda minati kami yang memudahkan Anda dalamdddddd
-                    pengelolaan peminjaman buku.
+                    pengelolaan peminjaman buku.ee
                 </p>
             </div>
 

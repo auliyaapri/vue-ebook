@@ -7,7 +7,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 onMounted(() => {
-  document.title = router.currentRoute.value.meta.title || 'Categories';
+  document.title = router.currentRoute.value.meta.title || 'Kategori Buku';
 });
 </script>
 
