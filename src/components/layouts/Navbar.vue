@@ -37,14 +37,12 @@ onMounted(() => {
     <header id="header" class="fixed-top d-flex align-items-center" :class="{ 'header-scrolled': isHeaderScrolled }">
       <div class="container d-flex align-items-center">
         <h1 class="logo me-auto ">
-  <RouterLink to="/">
-    
-    <img class="logo-image" src="../../assets/img/navbar-logo2.png" alt="aa">
-    <span></span>
-  </RouterLink>
-</h1>
+          <RouterLink to="/">
 
-    
+            <img class="logo-image" src="../../assets/img/navbar-logo2.png" alt="aa">
+            <span></span>
+          </RouterLink>
+        </h1>
 
         <nav id="navbar" class="navbar order-last order-lg-0 " :class="{ 'navbar-mobile': isNavbarMobile }">
           <ul>
@@ -52,20 +50,24 @@ onMounted(() => {
               <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/' }" to="/">Home</RouterLink>
             </li>
             <li>
-              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/about' }" to="/about">About</RouterLink>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/about' }" to="/about">About
+              </RouterLink>
             </li>
             <li>
-              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/categories' }" to="/categories">Categories</RouterLink>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/categories' }" to="/categories">
+                Categories</RouterLink>
             </li>
             <li>
-              <RouterLink class="nav-link scrollto" :class="{ 'active': route.hash === '#services' }" to="#services">Services</RouterLink>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.hash === '/service' }" to="/service">
+                Services</RouterLink>
             </li>
             <li>
-              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/pricing' }" to="/pricing">Pricing</RouterLink>
-            </li>            
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/pricing' }" to="/pricing">Pricing
+              </RouterLink>
+            </li>
           </ul>
-          <i class="ms-3 bi bi-list mobile-nav-toggle bg-white" @click="toggleMobileNavbar"></i>        
-        </nav>        
+          <i class="ms-3 bi bi-list mobile-nav-toggle bg-white" @click="toggleMobileNavbar"></i>
+        </nav>
         <UserInfo v-if="isLoggedIn" :user="user.data" />
         <AuthButton v-else />
       </div>
@@ -85,7 +87,7 @@ onMounted(() => {
 }
 
 .logo-image {
-  height:3.5rem; /* Sesuaikan tinggi sesuai keinginan Anda */
+  height: 3.5rem;
+  /* Sesuaikan tinggi sesuai keinginan Anda */
   width: auto;
-}
-</style>
+}</style>

@@ -53,11 +53,13 @@ function showErrorModal(message) {
     <div class="form-group first mb-3">
       <label for="email">email</label> <br>
       <label for="email">email</label>
-      <input v-model="form.email" name="email" type="text" class="form-control" placeholder="your-email@gmail.com" id="email" />
+      <input v-model="form.email" name="email" type="text" class="form-control" placeholder="your-email@gmail.com"
+        id="email" />
     </div>
     <div class="form-group last mb-3">
       <label for="password">Password</label>
-      <input @keyup.enter="login" v-model="form.password" name="password" type="password" class="form-control" placeholder="Your Password" id="password" />
+      <input @keyup.enter="login" v-model="form.password" name="password" type="password" class="form-control"
+        placeholder="Your Password" id="password" />
     </div>
 
     <div class="d-flex mb-5 align-items-center">
@@ -66,8 +68,8 @@ function showErrorModal(message) {
       </span>
     </div>
 
-<!-- jika salah login -->
-<div id="errorModal" class="modal fade" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <!-- jika salah login -->
+    <div id="errorModal" class="modal fade" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -82,8 +84,8 @@ function showErrorModal(message) {
           </div>
         </div>
       </div>
-      </div>
-<!-- jika salah login -->
+    </div>
+    <!-- jika salah login -->
     <button @click="login" type="button" value="Log In" class="btn btn-block btn-primary w-100">
       Log In
     </button>

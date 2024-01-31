@@ -49,9 +49,11 @@ const truncateDescription = (description) => {
       <br>
       <div class="section-title">
         <h2>Our Ebook</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-          cofilter-webnsectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        <p>Nikmati beragam ebook unggulan dari Wiguna Reads. Temukan pengalaman membaca yang tak terlupakan dengan beragam
+          pilihan ebook berkualitas. Setiap karya memberikan wawasan dan hiburan yang memikat. Jelajahi dunia literasi
+          baru bersama kami.</p>
       </div>
+
 
       <div class="row g-0">
         <div v-for="(book, index) in books" :key="index"

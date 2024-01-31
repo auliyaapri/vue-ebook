@@ -2099,7 +2099,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul i {
-  padding-right: 2px;
+  padding-right:1rem;
   color: white;
   font-size: 18px;
   line-height: 1;

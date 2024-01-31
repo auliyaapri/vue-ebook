@@ -59,24 +59,7 @@
           <div class="content">
             <h3>Selamat datang di dunia LibroVue.</h3>
             <p style="text-align: justify;">
-              LibroVue didirikan dengan tujuan membawa revolusi dalam dunia literasi. Kami memahami pentingnya membaca
-              dalam pengembangan pribadi dan menciptakan masyarakat yang lebih berpengetahuan.
-
-              Dengan tim yang berkomitmen dan koleksi buku yang terus berkembang, LibroVue menjadi mitra ideal Anda dalam
-              perjalanan literasi. Kami tidak hanya menyediakan buku-buku populer, tetapi juga menyajikan ruang eksklusif
-              untuk mengeksplorasi penulis baru dan karya-karya yang belum terungkap.
-
-              Melalui LibroVue, Anda tidak hanya meminjam buku, tetapi juga bergabung dalam komunitas pembaca yang
-              dinamis. Kami mengadakan acara, klub buku, dan diskusi untuk memastikan bahwa setiap pengguna merasa
-              terlibat dan termotivasi untuk terus mengeksplorasi dunia literasi.
-
-              Kami percaya bahwa membaca adalah jendela ke dunia yang lebih luas, dan LibroVue bertekad untuk membuat
-              jendela itu semakin terbuka bagi semua orang. Bergabunglah dengan kami dalam perjalanan literasi ini dan
-              nikmati pengalaman membaca yang tak terlupakan.
-
-              Selamat datang di dunia LibroVue, tempat di mana keindahan kata-kata bertemu dengan kenyamanan peminjaman
-              buku. Kami bukan sekadar platform, kami adalah komunitas pembaca yang bersemangat untuk menjelajahi dunia
-              literasi bersama Anda.
+              Wiguna Reads bertujuan mengubah dunia literasi dengan memberikan akses mudah dan menyenangkan ke beragam koleksi buku. Kami tidak hanya menyediakan buku-buku terpopuler, tetapi juga menciptakan ruang eksklusif untuk mengeksplorasi karya-karya baru. Bergabunglah dengan komunitas pembaca yang dinamis, hadiri acara, klub buku, dan diskusi, dan temukan pengalaman membaca yang tak terlupakan. Selamat datang di dunia literasi Wiguna Reads, di mana keindahan kata-kata dipadukan dengan kenyamanan peminjaman buku.
             </p>            
           </div>
 
