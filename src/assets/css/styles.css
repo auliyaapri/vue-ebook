@@ -108,7 +108,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  /* max-height: a; */
 }
 
 
@@ -680,6 +680,35 @@ section {
   background: #e03a3c;
 }
 
+/* ini yang pada bagian halaman about */
+.about .content .about-btn2 {
+  padding: 8px 30px 9px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e03a3c;
+}
+
+.about .content .about-btn2 i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.about .content .about-btn2 {
+  background: #e35052;
+  
+}
+.about .content .about-btn2:hover {
+  background: white;
+  color:red;
+}
+/* ini yang pada bagian halaman about */
+
 .about .icon-boxes .icon-box {
   margin-top: 30px;
 }
@@ -952,9 +981,13 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Link Or Button Toggle
 --------------------------------------------------------------*/
-
+/* section .portfolio {
+  padding: 1000px 0;
+  overflow: hidden;
+  position: relative;
+} */
 .portfolio .portfolio-item {
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .portfolio #portfolio-flters {

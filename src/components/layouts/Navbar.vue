@@ -36,16 +36,33 @@ onMounted(() => {
   <div>
     <header id="header" class="fixed-top d-flex align-items-center" :class="{ 'header-scrolled': isHeaderScrolled }">
       <div class="container d-flex align-items-center">
-        <h1 class="logo me-auto"><a href="/">Wiguna Book's<span>.</span></a></h1>
+        <h1 class="logo me-auto ">
+  <RouterLink to="/">
+    
+    <img class="logo-image" src="../../assets/img/navbar-logo2.png" alt="aa">
+    <span></span>
+  </RouterLink>
+</h1>
+
+    
 
         <nav id="navbar" class="navbar order-last order-lg-0 " :class="{ 'navbar-mobile': isNavbarMobile }">
           <ul>
-            <li><a class="nav-link scrollto" :class="{ 'active': route.path === '/' }" href="/">Home</a></li>
-            <li><a class="nav-link scrollto" :class="{ 'active': route.hash === '#about' }" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" :class="{ 'active': route.path === '/categories' }" href="/categories">Categories</a></li>
-            <li><a class="nav-link scrollto" :class="{ 'active': route.hash === '#services' }" href="#services">Services</a></li>
-            <li><a class="nav-link scrollto" :class="{ 'active': route.path === '/pricing' }" href="/pricing">Pricing</a></li>
-            <li><a class="nav-link scrollto" :class="{ 'active': route.hash === '#portfolio' }" href="#portfolio">Portfolio</a></li>
+            <li>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/' }" to="/">Home</RouterLink>
+            </li>
+            <li>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/about' }" to="/about">About</RouterLink>
+            </li>
+            <li>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/categories' }" to="/categories">Categories</RouterLink>
+            </li>
+            <li>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.hash === '#services' }" to="#services">Services</RouterLink>
+            </li>
+            <li>
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/pricing' }" to="/pricing">Pricing</RouterLink>
+            </li>            
           </ul>
           <i class="ms-3 bi bi-list mobile-nav-toggle bg-white" @click="toggleMobileNavbar"></i>        
         </nav>        
@@ -56,6 +73,8 @@ onMounted(() => {
   </div>
 </template>
 
+
+
 <style>
 /* Sesuaikan gaya header-scrolled sesuai kebutuhan */
 .header-scrolled {
@@ -65,5 +84,8 @@ onMounted(() => {
   /* Contoh shadow untuk memberikan efek penekanan saat di-scroll */
 }
 
-
+.logo-image {
+  height:3.5rem; /* Sesuaikan tinggi sesuai keinginan Anda */
+  width: auto;
+}
 </style>

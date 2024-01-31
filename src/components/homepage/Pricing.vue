@@ -69,6 +69,7 @@ onMounted(() => {
                             </button>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div class="col-lg-4 col-md-6 mt-4 mt-md-0">

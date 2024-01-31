@@ -13,6 +13,8 @@ const form = ref({
   password: "",
 });
 
+const error = ref(null);
+
 async function login() {
   try {
     const response = await axios.post(
@@ -32,12 +34,24 @@ async function login() {
     // console.log(response);
   } catch (error) {
     console.error(error);
+    showErrorModal("Email atau password salah"); // Menampilkan pesan kesalahan menggunakan modal
+
   }
+}
+
+function showErrorModal(message) {
+  // Menggunakan modal Bootstrap untuk menampilkan pesan kesalahan
+  const modal = new bootstrap.Modal(document.getElementById('errorModal'), {
+    keyboard: false
+  });
+  error.value = message;
+  modal.show();
 }
 </script>
 <template>
   <form action="#" method="post">
     <div class="form-group first mb-3">
+      <label for="email">email</label> <br>
       <label for="email">email</label>
       <input v-model="form.email" name="email" type="text" class="form-control" placeholder="your-email@gmail.com" id="email" />
     </div>
@@ -51,6 +65,25 @@ async function login() {
         <RouterLink to="/register" class="forgot-pass">Belum punya akun? Sign Up</RouterLink>
       </span>
     </div>
+
+<!-- jika salah login -->
+<div id="errorModal" class="modal fade" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="errorModalLabel">Error</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            {{ error }}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+      </div>
+<!-- jika salah login -->
     <button @click="login" type="button" value="Log In" class="btn btn-block btn-primary w-100">
       Log In
     </button>
