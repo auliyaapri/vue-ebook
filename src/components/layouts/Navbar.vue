@@ -58,7 +58,7 @@ onMounted(() => {
                 Categories</RouterLink>
             </li>
             <li>
-              <RouterLink class="nav-link scrollto" :class="{ 'active': route.hash === '/service' }" to="/service">
+              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/service' }" to="/service">
                 Services</RouterLink>
             </li>
             <li>

@@ -57,10 +57,11 @@ const truncateDescription = (description) => {
 
       <div class="row g-0">
         <div v-for="(book, index) in books" :key="index"
-          class="h-25 col-lg-4 col-md-6 portfolio-item filter-Romance p-3 d-flex justify-content-center">
+          class="h-25 col-lg-4 col-md-6 portfolio-item filter-Romance p-3 d-flex justify-content-center align-items-center">
           <div class="card p-3">
-            <img :src="book.thumbnails" class="card-img-top rounded-5" alt=""
-              style="height: 25rem; width: 23rem; object-fit: cover;">
+            <img :src="book.thumbnails" class="card-img-top card-img-top-product img-fluid rounded-5" alt="" style="height: 25rem; width: 23rem; object-fit: cover;">
+            <!-- <img :src="book.thumbnails" class="card-img-top card-img-top-product rounded-5" alt=""
+              style="height: 25rem; width: 23rem; object-fit: cover;"> -->
             <div class="card-body">
               <h5 class="card-title">{{ book.name }}</h5>
               <p class="card-text">{{ truncateDescription(book.description) }}</p>
@@ -69,11 +70,18 @@ const truncateDescription = (description) => {
           </div>
         </div>
         <div class="col-12 text-center mt-4">
-          <RouterLink to="/categories" class="btn btn-danger">Lihat Lainnya</RouterLink>
+  <RouterLink to="/categories" class="btn btn-danger btn-md btn-block">Lihat Lainnya</RouterLink>
+</div>
 
-        </div>
       </div>
 
     </div>
   </section><!-- End Portfolio Section -->
 </template>
+
+
+
+<style>
+/* @media (max-width: 575.98px) { ... } */
+
+</style>

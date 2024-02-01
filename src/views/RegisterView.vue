@@ -19,9 +19,9 @@ onMounted(() => {
 
             <div class="container">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-md-7">
-                        <h3>Register to <strong>Colorlib</strong></h3>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+                    <div class="col-md-7">                        
+                        <h3>Register to <strong>Wiguna Book's.</strong></h3>
+                        <p class="mb-4">Bergabunglah dengan komunitas pembaca Wiguna Book's sekarang! Daftarkan diri Anda untuk mendapatkan akses penuh ke koleksi ebook kami.</p>
                         <RegisterForm />
                     </div>
                 </div>

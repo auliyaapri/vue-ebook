@@ -3,6 +3,7 @@ import { ref } from "vue"
 import { RouterLink, useRouter } from "vue-router";
 import axios from "axios"
 import { useUserStore } from "@/stores/user"
+import Swal from 'sweetalert2/dist/sweetalert2.all.js';
 
 
 const userStore = useUserStore();
@@ -29,9 +30,16 @@ async function login() {
     // Ambil data pengguna dari server menggunakan store pengguna
     userStore.fetchUser();
 
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Login Successful!',
+      text: 'Welcome to your dashboard.',
+    });
     // Redirect ke halaman utama setelah login berhasil
     router.push("/");
     // console.log(response);
+    
   } catch (error) {
     console.error(error);
     showErrorModal("Email atau password salah"); // Menampilkan pesan kesalahan menggunakan modal
@@ -51,7 +59,6 @@ function showErrorModal(message) {
 <template>
   <form action="#" method="post">
     <div class="form-group first mb-3">
-      <label for="email">email</label> <br>
       <label for="email">email</label>
       <input v-model="form.email" name="email" type="text" class="form-control" placeholder="your-email@gmail.com"
         id="email" />
@@ -80,7 +87,7 @@ function showErrorModal(message) {
             {{ error }}
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

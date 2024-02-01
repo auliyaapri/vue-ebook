@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from "vue";
 import { useRouter } from "vue-router";
+import Services from "@/components/homepage/Services.vue";
 
 const router = useRouter();
 
@@ -9,13 +10,11 @@ onMounted(() => {
 });
 </script>
 <template>
+    
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>dsd</h1>
+    
+    <Services/>
 </template>
