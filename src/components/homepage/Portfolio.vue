@@ -13,7 +13,7 @@ async function getCategoriesEbook() {
     categoriesEbook.value = response.data.data.data;
 
     // Tambahkan console.log di sini untuk menampilkan isi respons
-    console.log(response.data);
+    // console.log(response);
   } catch (error) {
     console.error(error);
   }
@@ -24,7 +24,7 @@ async function getBooks() {
     const response = await axios.get("http://192.168.100.5:8000/api/products?limit=3");
     books.value = response.data.data.data;
 
-    console.log(response.data);
+    // console.log(response.data);
 
   } catch (error) {
     console.error(error);
@@ -59,7 +59,8 @@ const truncateDescription = (description) => {
         <div v-for="(book, index) in books" :key="index"
           class="h-25 col-lg-4 col-md-6 portfolio-item filter-Romance p-3 d-flex justify-content-center align-items-center">
           <div class="card p-3">
-            <img :src="book.thumbnails" class="card-img-top card-img-top-product img-fluid rounded-5" alt="" style="height: 25rem; width: 23rem; object-fit: cover;">
+            <img :src="book.thumbnails" class="card-img-top card-img-top-product img-fluid rounded-5" alt=""
+              style="height: 25rem; width: 23rem; object-fit: cover;">
             <!-- <img :src="book.thumbnails" class="card-img-top card-img-top-product rounded-5" alt=""
               style="height: 25rem; width: 23rem; object-fit: cover;"> -->
             <div class="card-body">
@@ -70,8 +71,8 @@ const truncateDescription = (description) => {
           </div>
         </div>
         <div class="col-12 text-center mt-4">
-  <RouterLink to="/categories" class="btn btn-danger btn-md btn-block">Lihat Lainnya</RouterLink>
-</div>
+          <RouterLink to="/categories" class="btn btn-danger btn-md btn-block">Lihat Lainnya</RouterLink>
+        </div>
 
       </div>
 
@@ -83,5 +84,4 @@ const truncateDescription = (description) => {
 
 <style>
 /* @media (max-width: 575.98px) { ... } */
-
 </style>

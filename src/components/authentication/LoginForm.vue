@@ -33,8 +33,8 @@ async function login() {
 
     Swal.fire({
       icon: 'success',
-      title: 'Login Successful!',
-      text: 'Welcome to your dashboard.',
+      title: 'Login Berhasil!',
+      text: 'Selamat datang di Wiguna Reads! Jelajahi dan nikmati perjalanan membaca Anda dengan koleksi kami.'
     });
     // Redirect ke halaman utama setelah login berhasil
     router.push("/");

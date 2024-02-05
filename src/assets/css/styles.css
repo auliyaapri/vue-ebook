@@ -157,7 +157,7 @@ h6 {
   display: inline-block;
 }
 .user_info {
-  margin-left: 1.5rem;
+  margin-left: 3rem;
   /* background: rgba(201, 197, 197, 0.614); */
   color: #000;
   border-radius: 4px;
@@ -173,7 +173,7 @@ h6 {
 }
 
 .user_info .avatar_image {
-  background: red;
+  
   border-radius:50%;
   height:2.2rem;
   

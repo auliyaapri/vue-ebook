@@ -22,6 +22,22 @@ const user = computed(() => userStore.getUser);
 const isLoggedIn = computed(() => userStore.isLoggedIn);
 
 onMounted(() => {
+  document.querySelectorAll('.scrollto').forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Close mobile navbar after clicking on a link
+      isNavbarMobile.value = false;
+    });
+  });
+
   const selectHeader = document.querySelector("#header");
   if (selectHeader) {
     window.addEventListener("load", headerScrolled);
@@ -31,6 +47,7 @@ onMounted(() => {
   userStore.fetchUser();
 });
 </script>
+
 
 <template>
   <div>
@@ -78,16 +95,13 @@ onMounted(() => {
 
 
 <style>
-/* Sesuaikan gaya header-scrolled sesuai kebutuhan */
 .header-scrolled {
-  background: #fff;
-  /* Contoh warna latar belakang untuk header yang berganti saat di-scroll */
+  background: #fff;  
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  /* Contoh shadow untuk memberikan efek penekanan saat di-scroll */
 }
 
 .logo-image {
   height: 3.5rem;
-  /* Sesuaikan tinggi sesuai keinginan Anda */
   width: auto;
-}</style>
+}
+</style>

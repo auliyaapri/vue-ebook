@@ -11,14 +11,14 @@ const avatarUrl = "https://ui-avatars.com/api/?background=random&name=";
 // Fungsi untuk menangani logout
 const logout = () => {
     // Implementasikan logika logout Anda di sini
-    localStorage.removeItem('access_token');    
+    localStorage.removeItem('access_token');
 
-    
+
     Swal.fire({
-  icon: 'success',
-  title: 'Logout Successful!',
-  text: 'You have been successfully logged out.',
-});
+        icon: 'success',
+        title: 'Logout Successful!',
+        text: 'You have been successfully logged out.',
+    });
 
     router.push('/login');
 };
@@ -26,15 +26,17 @@ const logout = () => {
 
 <template>
     <div class="dropdown user_info">
-        <button class="bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img :src="avatarUrl + user.name" alt="User Avatar" class="avatar_image me-2" />
+        <button class="bg-transparent border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img :src="avatarUrl + user.name" alt="User Avatar" class="avatar_image pe-1" />
             Halo, {{ user.name }}
         </button>
         <ul class="dropdown-menu">
-            <!-- <li><a class="dropdown-item" href="#" @click="logout"> <i class="bi bi-box-arrow-right"></i> Logout</a></li>             -->
             <li>
-                <button @click="logout" type="button" value="Log In" class="dropdown-item btn btn-block btn-danger w-100"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                <button @click="logout" type="button" value="Log In" class="dropdown-item btn btn-sm btn-danger w-100"><i
+                        class="bi bi-box-arrow-right"></i> Logout</button>
             </li>
         </ul>
+
     </div>
 </template>
