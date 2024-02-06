@@ -70,10 +70,14 @@ onMounted(() => {
               <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/about' }" to="/about">About
               </RouterLink>
             </li>
-            <li>
-              <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/categories' }" to="/categories">
-                Categories</RouterLink>
-            </li>
+         
+
+            <RouterLink class="nav-link scrollto" :class="{
+              'active': route.path.startsWith('/categories/') || route.path === '/categories'
+            }" to="/categories">
+              Categories
+            </RouterLink>
+
             <li>
               <RouterLink class="nav-link scrollto" :class="{ 'active': route.path === '/service' }" to="/service">
                 Services</RouterLink>
@@ -96,7 +100,7 @@ onMounted(() => {
 
 <style>
 .header-scrolled {
-  background: #fff;  
+  background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 

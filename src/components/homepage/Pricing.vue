@@ -47,7 +47,7 @@ async function checkout(price) {
 
 
 onMounted(() => {
-    document.title = router.currentRoute.value.meta.title || 'Daftar Harga';
+    document.title = router.currentRoute.value.meta.title || 'Pricing List';
 });
 </script>
 

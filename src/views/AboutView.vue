@@ -5,7 +5,6 @@
     <br>
     <br>
     <br>
-  
     <section id="about" class="about section-bg">
         <div class="container" data-aos="fade-up">
             <div v-if="$route.path !== '/'" class="row no-gutters align-items-center">

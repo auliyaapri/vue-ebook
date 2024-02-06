@@ -7,17 +7,13 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 onMounted(() => {
-  document.title = router.currentRoute.value.meta.title || 'Kategori Buku';
+  document.title = router.currentRoute.value.meta.title || 'Categories Book';
 });
 </script>
 
 <template>
 <br>  
 <br>  
-<br>  
-<br>  
-<br>  
-
         <Categories />
 
 </template>

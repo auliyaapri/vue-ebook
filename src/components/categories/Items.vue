@@ -1,5 +1,3 @@
-
-
 <template>
     <br>
     <br>
@@ -12,16 +10,12 @@
                     pengelolaan peminjaman buku.
                 </p>
             </div>
-
-            <div class="row">
-                <center>
-                    <div class="d-flex categories_id justify-content-between w-75">
-                        <ItemCard v-for="item in items" :key="item.id" :id="item.id" :title="item.name"
-                            :description="item.subtitle" :image="item.thumbnails" />
-                    </div>
-                </center>
-
-            </div>
+            <center>
+                <div class="row categories_id w-75">
+                    <ItemCard v-for="item in items" :key="item.id" :id="item.id" :title="item.name"
+                        :description="item.subtitle" :image="item.thumbnails" />
+                </div>
+            </center>
         </div>
     </section>
 </template>
