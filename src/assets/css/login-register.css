@@ -3,7 +3,8 @@ body {
   background-color: #fff;
 }
 
-p {
+.login_register p {
+  /* color: #b3b3b3; */
   color: #b3b3b3;
   font-weight: 300;
 }

@@ -8,7 +8,7 @@ const categoriesEbook = ref([]);
 
 async function getCategoriesEbook() {
     try {
-        const response = await axios.get("http://192.168.100.5:8000/api/categories?limit=9");
+        const response = await axios.get("https://www.apriwiguna.my.id/api/categories?limit=9");
         categoriesEbook.value = response.data.data.data;
     } catch (error) {
         console.error(error);
@@ -29,10 +29,10 @@ onMounted(() => {
         <div class="container" data-aos="fade-up">
             <div class="section-title">
                 <h2>Top Categories</h2>
-                <p>
-                    Temukan kategori yang Anda minati kami yang memudahkan Anda dalamdddddd
-                    pengelolaan peminjaman buku.ee
-                </p>
+                <center>
+                <p class="p-lg-0 p-3 w-100 w-lg-75">Temukan kategori yang Anda minati untuk membaca dan mengunduh buku sesuai keinginan Anda, yang memudahkan Anda dalam pengelolaan koleksi bacaan.</p>
+
+                </center>
             </div>
 
             <div class="row">

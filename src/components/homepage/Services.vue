@@ -1,7 +1,7 @@
 <template>
     <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
-  <div class="container" data-aos="fade-up">
+  <div class="container p-lg-0 p-3" data-aos="fade-up">
 
     <div class="section-title">
       <h2>Layanan</h2>
@@ -24,19 +24,21 @@
         </div>
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-          <i class="bi bi-bar-chart"></i>
-          <h4><a href="#">Pantau Riwayat Peminjaman</a></h4>
-          <p>Lihat dan pantau riwayat peminjaman buku Anda dengan mudah.</p>
-        </div>
-      </div>
-      <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-          <i class="bi bi-binoculars"></i>
-          <h4><a href="#">Notifikasi Pengembalian</a></h4>
-          <p>Dapatkan notifikasi untuk mengingatkan pengembalian buku sesuai jadwal.</p>
-        </div>
-      </div>
+    <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-bank"></i>
+        <h4><a href="#">Pembayaran Mudah</a></h4>
+        <p>Lakukan pembayaran dengan mudah dan cepat.</p>
+    </div>
+</div>
+
+<div class="col-md-6 mt-4 mt-md-0">
+    <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+        <i class="bi bi-hand-thumbs-up"></i>
+        <h4><a href="#">Dapat Digunakan di Perangkat Manapun</a></h4>
+        <p>Nikmati akses ke koleksi buku kami dari berbagai perangkat, kapan pun dan di mana pun Anda berada.</p>
+    </div>
+</div>
+
       <div class="col-md-6 mt-4 mt-md-0">
         <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
           <i class="bi bi-brightness-high"></i>
@@ -45,12 +47,13 @@
         </div>
       </div>
       <div class="col-md-6 mt-4 mt-md-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
-          <i class="bi bi-calendar4-week"></i>
-          <h4><a href="#">Pengaturan Waktu Pengembalian</a></h4>
-          <p>Atur waktu pengembalian buku sesuai kebutuhan Anda.</p>
-        </div>
-      </div>
+    <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
+        <i class="bi bi-cloud-download"></i>
+        <h4><a href="#">Unduh Buku dengan Mudah</a></h4>
+        <p>Download buku-buku favorit Anda dengan cepat dan tanpa hambatan.</p>
+    </div>
+</div>
+
     </div>
 
   </div>

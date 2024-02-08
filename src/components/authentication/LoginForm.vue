@@ -19,7 +19,7 @@ const error = ref(null);
 async function login() {
   try {
     const response = await axios.post(
-      "http://192.168.100.5:8000/api/login", {
+      "https://www.apriwiguna.my.id/api/login", {
       email: form.value.email,
       password: form.value.password,
     }

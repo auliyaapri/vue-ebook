@@ -26,7 +26,7 @@
                 <h4>Alamat Info</h4>
                 <ul>
                   <li><i class="bx bxl-instagram"></i> <a href="#">Jatiasih, Jatisari</a></li>
-                  <li><i class="bx bx-phone"></i> <a href="#">+62 89677058522</a></li>
+                  <li><i class="bx bx-phone"></i> <a href="#">+62 123456789</a></li>
                   <li><i class="bx bx-envelope"></i> <a href="#">apri.wiguna29@gmail.com</a></li>
                 </ul>
               </div>

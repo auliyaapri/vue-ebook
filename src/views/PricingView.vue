@@ -13,7 +13,7 @@ import Tabs from '@/components/homepage/Tabs.vue';
   <section id="tabs" class="tabs">
     <div class="container" data-aos="fade-up">
       <div class="row d-flex align-items-center">
-        <div class="col-6">
+        <div class="col-md-6 p-3 p-lg-0">
           <div class="tab-content">
             <div class="tab-pane active show" id="tab-1">
               <div class="row">
@@ -27,20 +27,13 @@ import Tabs from '@/components/homepage/Tabs.vue';
                     <li><i class="bi bi-check2"></i> Penyaringan ebook berdasarkan genre, penulis, dan lainnya.</li>
                     <li><i class="bi bi-check2"></i> Dapatkan rekomendasi ebook yang sesuai dengan preferensi Anda.</li>
                   </ul>
-                  <p>
-                    Ciptakan pengalaman membaca yang lebih seru dan informatif dengan koleksi ebook kami, dengan harga
-                    mulai
-                    dari 5k per minggu dan 15k per bulan.
-                  </p>
-                </div>
-
-                <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <p>Buatlah pengalaman membaca yang lebih menarik dan informatif dengan koleksi ebook kami. Dapatkan akses tanpa batas seumur hidup hanya dengan harga Rp. 50.000.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6 text-center d-flex align-items-center justify-content-center">
+        <div class="col-md-6 mt-5 mt-lg-0 text-center d-flex align-items-center justify-content-center">
           <img src="../assets/img/pricing/oke3.png" class="img-fluid" style="height: 95%;" alt="">
         </div>
       </div>

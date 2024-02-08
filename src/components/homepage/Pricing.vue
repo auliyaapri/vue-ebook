@@ -21,7 +21,7 @@ async function checkout(price) {
 
     try {
         // Mengirim permintaan login ke API
-        const response = await axios.post('http://192.168.100.5:8000/api/checkout', {
+        const response = await axios.post('https://www.apriwiguna.my.id/api/checkout', {
             payment_total: price,
             payment_status: "PENDING"
         },
@@ -53,20 +53,18 @@ onMounted(() => {
 
 <template>
     <section id="pricing" class="pricing section-bg">
-        <div class="container" data-aos="fade-up">
-
+        <div class="container p-3 p-lg-0" data-aos="fade-up">
             <div class="section-title">
-                <h2>Paket Hargssa</h2>
-                <p>Pilih paket harga yang sesuai dengan kebutuhan Anda untuk mendapatkan akses penuh ke koleksi buku kami.
-                </p>
+                <h2>Paket Harga</h2>
+                <p>Segera langganan ke paket kami harga yang sesuai dengan kebutuhan Anda untuk mendapatkan akses penuh ke koleksi buku kami.</p>
             </div>
 
             <div class="row d-flex justify-content-center">
 
                 <div class="col-lg-4 col-md-6">
                     <div class="box featured" data-aos="fade-up" data-aos-delay="100">
-                        <h3>Paket Premium</h3>
-                        <h4><sup>Rp</sup>5.000<span> / Minggu</span></h4>
+                        <h3>Daftar Langganan</h3>
+                        <h4><sup>Rp</sup>50.000<span></span></h4>
                         <ul>
                             <li>Akses eksklusif ke berbagai buku dengan Paket Premium.</li>
                             <li>Temukan dunia literasi dengan navigasi yang mudah.</li>
@@ -74,17 +72,16 @@ onMounted(() => {
                             <li>Mulai perjalanan membaca dengan langganan sekarang!</li>
                             <li class="na">Peminjaman terbatas</li>
                             <li class="na">Tidak termasuk buku terbaru</li>
+                            <li class="na">Tidak dapat mengunduh buku.</li>
                         </ul>
                         <div class="btn-wrap">
-                            <button class="btn-buy" @click="checkout(5000)">
+                            <button class="btn-buy" @click="checkout(50000)">
                                 Langganan Sekarang
                             </button>
                         </div>
                     </div>
-                </div>
-
-
-                
+                </div>               
+             
             </div>
         </div>
     </section>

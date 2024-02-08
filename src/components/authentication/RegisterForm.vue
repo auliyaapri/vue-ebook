@@ -28,7 +28,7 @@ async function register() {
 
   try {
     const response = await axios.post(
-      "http://192.168.100.5:8000/api/register",
+      "https://www.apriwiguna.my.id/api/register",
       {
         name: form.value.name,
         email: form.value.email,

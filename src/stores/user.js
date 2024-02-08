@@ -25,7 +25,7 @@ export const useUserStore = defineStore({
         async fetchUser() {
             try {
                 // Melakukan GET request ke endpoint API user
-                const { data } = await axios.get('http://192.168.100.5:8000/api/user', {
+                const { data } = await axios.get('https://www.apriwiguna.my.id/api/user', {
                     headers: {
                         // Mengatur header Authorization dengan token yang disimpan di localStorage
                         Authorization: localStorage.getItem('token_type') + ' ' + localStorage.getItem('access_token')

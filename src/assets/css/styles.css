@@ -87,8 +87,7 @@ h6 {
 
 #header.header-scrolled {
   padding: 12px 0 !important;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1)!important;
-  
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
 #header .logo {
@@ -111,24 +110,30 @@ h6 {
   /* max-height: a; */
 }
 
-
-
 .product_detail h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
 }
-.product_detail h4 {  
-  font-weight: 700;  
+.product_detail h4 {
+  font-weight: 700;
   font-size: 1.5rem;
-  
 }
-.product_detail p {  
-  font-weight: 400;  
+.product_detail p {
+  font-weight: 400;
   font-size: 1rem;
-  
 }
+
+.product_detail img.image_ebook_detail {
+  height: 75vh;
+}
+@media (max-width: 991.98px) {
+  .product_detail img.image_ebook_detail {
+    height: 100vh;
+  }
+}
+
 /*--------------------------------------------------------------
 # Get Startet Button
 --------------------------------------------------------------*/
@@ -171,14 +176,12 @@ h6 {
   align-items: center;
   justify-content: space-around;
 }
-
+@media (max-width: 991.98px) { 
+ 
+ }
 .user_info .avatar_image {
-  
-  border-radius:50%;
-  height:2.2rem;
-  
-
-
+  border-radius: 50%;
+  height: 2.2rem;
 }
 .get-signUp-btn {
   margin-left: 20px;
@@ -251,7 +254,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #e03a3c;
 }
 
@@ -285,11 +288,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #e03a3c;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -301,7 +304,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -313,7 +316,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -384,7 +387,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #e03a3c;
 }
 
@@ -419,11 +422,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #e03a3c;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -593,11 +596,11 @@ section {
   transition: 0.3s;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #e03a3c;
@@ -701,11 +704,10 @@ section {
 
 .about .content .about-btn2 {
   background: #e35052;
-  
 }
 .about .content .about-btn2:hover {
   background: white;
-  color:red;
+  color: red;
 }
 /* ini yang pada bagian halaman about */
 
@@ -925,8 +927,6 @@ section {
   font-size: 14px;
 }
 
-
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -940,7 +940,7 @@ section {
 }
 
 .categories .icon-box:hover {
-  background: #2b2b2b;
+  background: #554747;
 }
 
 .categories .icon-box i {
@@ -951,7 +951,6 @@ section {
 }
 
 .categories .icon-box h4 {
-
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -971,12 +970,17 @@ section {
 }
 
 .categories .icon-box p {
-
   line-height: 24px;
   font-size: 14px;
 }
-
-
+.categories .width_items_ebook {
+  width: 75%;
+}
+@media (max-width: 991.98px) {
+  .categories .width_items_ebook {
+    width: 100%;
+  }
+}
 
 /*--------------------------------------------------------------
 # Portfolio Link Or Button Toggle
@@ -1021,11 +1025,6 @@ section {
   margin-right: 0;
 }
 
-
-
-
-
-
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1042,7 +1041,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1050,7 +1052,10 @@ section {
   border: 1px solid #e03a3c;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #e03a3c;
 }
 
@@ -1073,7 +1078,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1244,7 +1249,7 @@ section {
   border-radius: 4px;
   color: #fff;
   transition: none;
-  background:none;
+  background: none;
   font-size: 14px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
@@ -1448,7 +1453,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1504,7 +1509,7 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #e03a3c;
   border: 0;
   padding: 10px 32px;
@@ -1513,7 +1518,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #e35052;
 }
 
@@ -1576,7 +1581,7 @@ section {
   margin: 0;
 }
 
-.blog .entry .entry-meta ul li+li {
+.blog .entry .entry-meta ul li + li {
   padding-left: 20px;
 }
 
@@ -1693,7 +1698,7 @@ section {
   display: inline-block;
 }
 
-.blog .entry .entry-footer .tags li+li::before {
+.blog .entry .entry-footer .tags li + li::before {
   padding-right: 6px;
   color: #6c757d;
   content: ",";
@@ -1912,7 +1917,7 @@ section {
   position: relative;
 }
 
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -1949,7 +1954,7 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {
+.blog .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
@@ -1968,7 +1973,7 @@ section {
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item+.post-item {
+.blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -2099,7 +2104,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul i {
-  padding-right:1rem;
+  padding-right: 1rem;
   color: white;
   font-size: 18px;
   line-height: 1;
@@ -2147,13 +2152,13 @@ section {
   text-align: left;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -1px;
@@ -2169,7 +2174,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #e35052;
 }
 

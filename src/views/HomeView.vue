@@ -5,7 +5,7 @@ import About from "@/components/homepage/About.vue";
 import Client from "@/components/homepage/Client.vue";
 import Tabs from "@/components/homepage/Tabs.vue";
 import Services from "@/components/homepage/Services.vue";
-import Portfolio from "@/components/homepage/Portfolio.vue";
+import Ebook from "@/components/homepage/Ebook.vue";
 import Pricing from "@/components/homepage/Pricing.vue";
 
 import Categories from "@/components/homepage/Categories.vue";
@@ -15,7 +15,7 @@ import { onMounted } from "vue";
 const router = useRouter();
 
 onMounted(() => {
-  document.title = router.currentRoute.value.meta.title || 'Beranda';
+  document.title = router.currentRoute.value.meta.title || 'Home';
 });
 
 </script>
@@ -30,7 +30,7 @@ onMounted(() => {
       <Tabs />
       <Categories />
       <Services />
-      <Portfolio />
+      <Ebook />
       <Pricing />
       
     <!-- </main> -->

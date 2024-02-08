@@ -10,7 +10,7 @@
             <div v-if="$route.path !== '/'" class="row no-gutters align-items-center">
                 <div class="content col-xl-6 d-flex align-items-stretch">
                     <div class="content">
-                        <h3>Selamat datang di dunia LibroVue.</h3>
+                        <h3>Selamat datang di dunia Wiguna Reads.</h3>
                         <p style="text-align: justify;">
                             Wiguna Reads bertujuan mengubah dunia literasi dengan memberikan akses mudah dan menyenangkan ke beragam koleksi buku. Kami tidak hanya menyediakan buku-buku terpopuler, tetapi juga menciptakan ruang eksklusif untuk mengeksplorasi karya-karya baru. Bergabunglah dengan komunitas pembaca yang dinamis, hadiri acara, klub buku, dan diskusi, dan temukan pengalaman membaca yang tak terlupakan. Selamat datang di dunia literasi Wiguna Reads, di mana keindahan kata-kata dipadukan dengan kenyamanan peminjaman buku.
                         </p>
@@ -30,9 +30,9 @@
             <div class="row no-gutters">
                 <div class="content col-xl-5 d-flex align-items-stretch">
                     <div class="content">
-                        <h3>Nikmati Kenyamanan Peminjaman Buku dengan LibroVue</h3>
+                        <h3>Nikmati Kenyamanan Peminjaman Buku dengan Wiguna Reads</h3>
                         <p>
-                            Temukan pengalaman peminjaman buku yang menyenangkan dan aman dengan LibroVue. Kami hadir untuk
+                            Temukan pengalaman peminjaman buku yang menyenangkan dan aman dengan Wiguna Reads. Kami hadir untuk
                             memudahkan Anda menikmati beragam koleksi buku tanpa ribet. Temukan buku-buku terbaik untuk
                             menemani
                             perjalanan literasi Anda.

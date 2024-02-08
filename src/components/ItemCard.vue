@@ -1,6 +1,6 @@
 <template>
     
-    <div class="col-lg-4 mt-4">
+    <div class="col-lg-4 col-md-6 g-0 mt-4">
       <div class="card border-3 p-2" style="width: 18rem;">
         <RouterLink :to="{ name: 'category-items', params: { id: id } }">
           <img :src="image" class="card-img-top rounded-4" :alt="title" style="height: 18rem;"/>
