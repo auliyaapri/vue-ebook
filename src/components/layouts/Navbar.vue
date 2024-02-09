@@ -21,42 +21,18 @@ const userStore = useUserStore();
 const user = computed(() => userStore.getUser);
 const isLoggedIn = computed(() => userStore.isLoggedIn);
 
-onMounted(() => {
-  document.querySelectorAll('.scrollto').forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-
-      const targetId = link.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-
-      // Close mobile navbar after clicking on a link
-      isNavbarMobile.value = false;
-    });
-  });
-
-  const selectHeader = document.querySelector("#header");
-  if (selectHeader) {
-    window.addEventListener("load", headerScrolled);
-    window.addEventListener("scroll", headerScrolled);
-  }
-
-  userStore.fetchUser();
-});
 </script>
 
 
 <template>
   <div>
-    <header id="header" class="fixed-top d-flex align-items-center" :class="{ 'header-scrolled': isHeaderScrolled }">
+    <header id="header" class="fixed-top " :class="{ 'header-scrolled': isHeaderScrolled }">    
       <div class="container d-flex align-items-center">
         <h1 class="logo me-auto ">
           <RouterLink to="/">
 
-            <img class="logo-image" src="../../assets/img/navbar-logo2.png" alt="aa">
+            <img class="logo-image d-none d-md-block" src="../../assets/img/navbar-logo2.png" alt="Logo Wiguna Reads">
+            <img style="height: 50px;" class="bg-danger img-fluid logo-image d-block d-md-none" src="../../assets/img/navbar-logo2.png" alt="Logo Wiguna Reads">
             <span></span>
           </RouterLink>
         </h1>

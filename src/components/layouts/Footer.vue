@@ -8,7 +8,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-12 footer-contact">
+          <div class="p-md-0 p-3 col-lg-4 col-md-12 footer-contact">
             <h1 class="logo me-auto ">
               <RouterLink to="/">
                 <img class="logo-image" src="../../assets/img/navbar-logo2.png" alt="aa">
@@ -20,25 +20,23 @@
           </p>           
           </div>
 
-          <div class="col-lg-4 col-md-12 footer-links">
+          <div class="p-md-0 p-3 col-lg-4 col-md-12 footer-links">
             <div class="d-lg-flex justify-content-center">
               <div>
                 <h4>Alamat Info</h4>
                 <ul>
-                  <li><i class="bx bxl-instagram"></i> <a href="#">Jatiasih, Jatisari</a></li>
+                  <li><i class="bx bxl-instagram"></i> <a href="#">Jatiasih</a></li>
                   <li><i class="bx bx-phone"></i> <a href="#">+62 123456789</a></li>
                   <li><i class="bx bx-envelope"></i> <a href="#">apri.wiguna29@gmail.com</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12 footer-links">
+          <div class="p-md-0 p-3 col-lg-4 col-md-12 footer-links">
             <div class="d-lg-flex justify-content-center">
 
               <div>
                 <h4>Our Social Media</h4>
-
-
                 <ul>
                   <li><i class="bx bxl-instagram"></i> <a href="https://www.instagram.com/apri.wiguna/">Instagram</a></li>
                   <li><i class="bx bxl-facebook"></i> <a href="https://web.facebook.com/apriwiguna111">Facebook</a></li>
@@ -53,7 +51,7 @@
       </div>
     </div>
     
-      <div class="copyright text-center py-3 d-flex align-items-xl-center justify-content-center">
+      <div class="copyright text-center py-3 d-sm-flex align-items-xl-center justify-content-center">
         <div>
           &copy; Copyright <strong><span>Auliya Aprwiguna 2024.</span></strong>
         </div>
