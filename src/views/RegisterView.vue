@@ -14,7 +14,7 @@ onMounted(() => {
 
 <template>
     <div class="d-lg-flex half">
-        <div class="bg order-1 order-md-2" style="background-image: url('../../src/assets/img/login-register.jpg');"></div>
+        <div class="bg order-1 order-md-2 bg_login_register"></div>
         <div class="contents order-2 order-md-1 login_register">
 
             <div class="container">

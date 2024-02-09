@@ -2,7 +2,12 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #fff;
 }
-
+.bg_login_register{
+  
+  background: url("../img/login-register.jpg") top center no-repeat;
+  background-size: cover;
+  
+}
 .login_register p {
   /* color: #b3b3b3; */
   color: #b3b3b3;
