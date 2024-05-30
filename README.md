@@ -4,11 +4,10 @@ Wiguna Reads adalah proyek website menggunakan Vue.js. Pengguna membayar biaya l
 admin: Email: user@gmail.com 
 Password: password
 
-## 💻 Demo Website
+## 💻 Demo Website[
 ![pOqApwMQmakGbCYXO4nMLm1ZcXw41wxliSCqsBmM](https://github.com/auliyaapri/vue-ebook/assets/45688720/683371ef-7981-4325-ab5a-2199731e9296)
 
-
-[[https://auliyaapri.github.io/Projek-Web-Kuliah-Semester-2/](https://wigunareads.netlify.app/)](https://wigunareads.netlify.app/)
+https://wigunareads.netlify.app/
 
 ## 🚀 Tech Stack Used
 - Vue JS (Framework JavaScript)
