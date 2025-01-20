@@ -1,19 +1,20 @@
 # Projek Web Ebook✨
+
+Proyek Web Kuliah Semester 5 - Teknologi Web Service ✨
+
 Wiguna Reads adalah proyek website menggunakan Vue.js. Pengguna membayar biaya langganan 50.000 rupiah untuk membaca dan mengunduh e-book. Langganan memberikan akses seumur hidup ke koleksi e-book. Pembayaran menggunakan Midtrans API. Setelah pembayaran, admin memverifikasi sebelum pengguna dapat mengakses konten. Akun yang telah di verifikasi 
 
-admin: Email: user@gmail.com 
-Password: password
+---
 
-## 💻 Demo Website[
+## 💻 Demo Website
+
 ![pOqApwMQmakGbCYXO4nMLm1ZcXw41wxliSCqsBmM](https://github.com/auliyaapri/vue-ebook/assets/45688720/683371ef-7981-4325-ab5a-2199731e9296)
 
-https://wigunareads.netlify.app/
+[![Tonton di YouTube](https://img.shields.io/badge/Tonton%20di%20YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=smUv_sjBzD4)
+---
 
 ## 🚀 Tech Stack Used
-- Vue JS (Framework JavaScript)
-- Node JS (Runtime JavaScript)
-- GitHub (Platform Hosting Kode Sumber)
-- Git (Sistem Kontrol Versi)
-- VSCode (Editor Kode Sumber)
-  
 
+- **HTML, CSS, JavaScript**
+- **Bootstrap**
+- **Vue JS**
