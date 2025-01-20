@@ -19,7 +19,6 @@ const logout = () => {
         title: 'Logout Successful!',
         text: 'You have been successfully logged out.',
     });
-
     router.push('/login');
 };
 </script>

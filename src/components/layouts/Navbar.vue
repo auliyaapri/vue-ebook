@@ -21,6 +21,11 @@ const userStore = useUserStore();
 const user = computed(() => userStore.getUser);
 const isLoggedIn = computed(() => userStore.isLoggedIn);
 
+
+onMounted(async () => {
+  await userStore.fetchUser();  
+  console.log(isLoggedIn.value); 
+});
 </script>
 
 
@@ -65,12 +70,14 @@ const isLoggedIn = computed(() => userStore.isLoggedIn);
           </ul>
           <i class="ms-3 bi bi-list mobile-nav-toggle bg-white" @click="toggleMobileNavbar"></i>
         </nav>
+
         <UserInfo v-if="isLoggedIn" :user="user.data" />
         <AuthButton v-else />
       </div>
     </header>
   </div>
 </template>
+
 
 
 
